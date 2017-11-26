@@ -7,7 +7,8 @@
     "start": "nodemon lib/index.js --exec babel-node --presets es2015,stage-2",
     "build": "babel lib -d dist",
     "serve": "node dist/index.js",
-    "test": "mocha --compilers js:babel-register"
+    "test": "mocha --compilers js:babel-register",
+    "stryker": "stryker run"
   },
   "author": "James Kyle <me@thejameskyle.com>",
   "license": "ISC",
@@ -17,6 +18,13 @@
     "babel-preset-stage-2": "^6.11.0",
     "babel-register": "^6.11.6",
     "mocha": "^3.0.1",
-    "nodemon": "^1.10.0"
+    "nodemon": "^1.10.0",
+    "stryker": "^0.15.2",
+    "stryker-api": "^0.11.0",
+    "stryker-babel": "file:../../stryker/packages/stryker-babel",
+    "stryker-html-reporter": "^0.11.1",
+    "stryker-javascript-mutator": "^0.2.1",
+    "stryker-mocha-framework": "^0.7.0",
+    "stryker-mocha-runner": "^0.10.0"
   }
 }
